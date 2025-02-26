@@ -149,7 +149,7 @@ J0_FP = simplify(J_rotation * J4_FP);
 simplify(det(J0_FP(1:2,1:2)));
 %%
 function [T, Tfinal] = FK(alpha, a, d, theta) % Calculated FK (263A Final Exam code)
-    syms d1 a2 a3
+    %syms d1 a2 a3
     % Initialization of the transformation from the base to the end effector
     T0_ee = eye(4);
     T = struct(); % Initialize structure array for T
